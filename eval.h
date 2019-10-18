@@ -15,12 +15,23 @@ int amount_of_vars(list in, char **list_of_vars)
 		if(walk->content->is_operator) { walk = walk->next; continue; }
 		if(!list_contains_var(&tmp, walk->content->content.var[0]))
 		{
+			char buf[strlen("Found new variable: 'c'.\n")];
+			sprintf(buf, "Found new variable: '%c'.\n", walk->content->content.var[0]);
+			eval_log(buf);
 			append(&tmp, walk->content);
 		}
 		walk = walk->next;
 	}
 
 	eval_log("Constructed temp list.\n");
+	eval_log("Temp list: ");
+	print_list(tmp);
+	walk = tmp;
+	while(walk->content->is_operator)
+	{
+		walk = walk->next;
+		remove_at(&tmp, 0);
+	}
 	walk = tmp;
 	int count = 0;
 	while(walk != NULL)
@@ -32,12 +43,18 @@ int amount_of_vars(list in, char **list_of_vars)
 	char *buf = (char *)malloc(count + 1);
 	walk = tmp;
 	int i = 0;
+	eval_log("All variables: ");
+	char buff[3] = { 0 };
+	buff[1] = ' ';
 	while(walk != NULL && i < count)
 	{
+		buff[0] = walk->content->content.var[0];
 		buf[i] = walk->content->content.var[0];
 		i++;
 		walk = walk->next;
+		eval_log(buff);
 	}
+	eval_log("\n");
 	buf[i] = '\0';
 	*list_of_vars = buf;
 	return count;

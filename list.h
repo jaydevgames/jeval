@@ -37,19 +37,19 @@ void print_readable(struct _list_node *target, int to_out)
 			{
 				switch(walk->content->content.op[0])
 				{
-					case 'a': ((to_out) ? eval_out : eval_log)("and "); break;
-					case 'o': ((to_out) ? eval_out : eval_log)("or "); break;
-					case 'i': ((to_out) ? eval_out : eval_log)("implies "); break;
-					case 'e': ((to_out) ? eval_out : eval_log)("is equivalent with "); break;
-					case 'n': ((to_out) ? eval_out : eval_log)("is not the same as "); break;
-					case '!': ((to_out) ? eval_out : eval_log)("not "); break;
+					case 'a': ((to_out) ? eval_out : eval_log)(" ∧ "); break;
+					case 'o': ((to_out) ? eval_out : eval_log)(" ∨ "); break;
+					case 'i': ((to_out) ? eval_out : eval_log)(" ⇒ "); break;
+					case 'e': ((to_out) ? eval_out : eval_log)(" ≡ "); break;
+					case 'n': ((to_out) ? eval_out : eval_log)(" ≢ "); break;
+					case '!': ((to_out) ? eval_out : eval_log)(" ¬"); break;
 				}
 			}
 		}
 		else
 		{
 			char buf[3];
-			sprintf(buf, "%c ", walk->content->content.var[0]);
+			sprintf(buf, "%c", walk->content->content.var[0]);
 			((to_out) ? eval_out : eval_log)(buf);
 		}
 		walk = walk->next;
