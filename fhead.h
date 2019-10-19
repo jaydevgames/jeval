@@ -24,6 +24,7 @@ void eval_out_i(int, int);
 const FILE *normal_stream();
 const FILE *error_stream();
 
+char *reverse_sort(const char *);
 int input_to_list(const char *, list);
 int is_legal(char);
 int is_valid(list);

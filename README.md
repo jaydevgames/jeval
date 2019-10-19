@@ -2,17 +2,17 @@
 *Simple Truth Table Generator*
 ## Operators:
   * a for conjunction 
-    * Logical symbol: "∧"
+    * Logical symbol: ``∧``
   * o for disjunction
-    * Logical symbol: "∨"
+    * Logical symbol: ``∨``
   * i for implication or 
-    * Logical symbol: "⇒"
+    * Logical symbol: ``⇒``
   * ! for negation
-    * Logical symbol: "¬"
+    * Logical symbol: ``¬``
   * e for biconditional (or equivalence)
-    * Logical symbol: "≡"
+    * Logical symbol: ``≡``
   * n for exclusive disjunction
-    * Logical symbol: "≢"
+    * Logical symbol: ``≢``
 
 ## Variables
 Variables are case-sensitive and can be any non-operator letter.
@@ -74,6 +74,7 @@ The default settings are:
       * See the warning for the ``_EVAL_LOGLEVEL`` flag
     * Any other value causes and error and defaults to ``stdout``
       * Changing this flag is generally not recommended.
+Don't forget to recompile the project after modifying the ``def.h`` file or any other files.
 
 ## Calling from code
 To implement the generator for your own projects, include:
