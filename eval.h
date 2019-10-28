@@ -121,10 +121,10 @@ int eval_ed(list in)
 	char buf[strlen("Finished. Value: 1.\n\n")];
 	sprintf(buf, "Finished. Value: %01d.\n\n", rt);
 	eval_log(buf);
-	//free(x);
-	//free(y);
-	//free(t);
-	free(stack);
+	//(x);
+	//(y);
+	//(t);
+	(stack);
 	return rt;
 }
 
@@ -261,12 +261,6 @@ int infix_to_postfix(list in, list out)
 	}
 
 	eval_log("Finished succesfully.\n");
-	/*struct _entity *rm;
-	do
-	{
-		rm = pop(&stack);
-	} while(rm != NULL);*/
-	//free(walk); free(stack); free(left_parent); free(right_parent); free(tmp);
 	return 0;
 }
 

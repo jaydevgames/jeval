@@ -60,13 +60,11 @@ int append(list target, struct _entity *value)
 {
 	if(target == NULL || (*target) == NULL || (*target)->content == NULL)
 	{
-//		eval_log("List is NULL.\n");
 		struct _list_node *new_node = (struct _list_node *)(malloc(sizeof(struct _list_node)));
 		if(new_node == NULL) { return 1; }
 		new_node->content = value;
 		new_node->next = NULL;
 		(*target) = new_node;
-//		eval_log("Success.\n");
 		return 0;
 	}
 	else
@@ -79,7 +77,6 @@ int append(list target, struct _entity *value)
 			walk = walk->next;
 		}
 		walk->next = new_node;
-//		eval_log("Success.\n");
 		return 0;
 	}
 }
@@ -88,7 +85,6 @@ struct _entity *remove_at(list target, int index)
 {
 	if(target == NULL || *target == NULL)
 	{
-//		eval_error("List is empty; returning NULL.\n");
 		return NULL;
 	}
 	else
@@ -108,14 +104,12 @@ struct _entity *remove_at(list target, int index)
 		{
 			struct _entity *val = (*target)->content;
 			*target = walk->next;
-			free(walk);
 			return val;
 		}
 		else
 		{
 			struct _entity *val = walk->content;
 			prev->next = walk->next;
-			free(walk);
 			return val;
 		}
 	}

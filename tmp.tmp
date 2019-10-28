@@ -1,0 +1,167 @@
+Expression: po!p
+Encountered character 'p'. Legality status: 2.
+000 of 003
+Encountered character 'o'. Legality status: 1.
+001 of 003
+Encountered character '!'. Legality status: 1.
+002 of 003
+Encountered character 'p'. Legality status: 2.
+003 of 003
+Finished.
+List created.
+Current: operator 0; value: p.
+Testing.
+Stepping. Moving on.
+Current: operator 1; value: o.
+Testing.
+Stepping. Moving on.
+Current: operator 1; value: !.
+Testing.
+Stepping. Moving on.
+Current: operator 0; value: p.
+Testing.
+Stepping. Moving on.
+Expression valid.
+Started converting infix to postfix...
+Finished preparations.
+Started conversion...
+
+Current postfix: Entity is empty. Printing [NULL].
+
+[NULL] --> NULL
+Appending variable.
+
+Current postfix: [Op.:  NO; val.: p] --> NULL
+Popping until encounter of a lesser operator.
+Current operator stack: [Op.: YES; val.: o] --> [Op.: YES; val.: (] --> NULL
+
+Current postfix: [Op.:  NO; val.: p] --> NULL
+Popping until encounter of a lesser operator.
+Current operator stack: [Op.: YES; val.: !] --> [Op.: YES; val.: o] --> [Op.: YES; val.: (] --> NULL
+
+Current postfix: [Op.:  NO; val.: p] --> NULL
+Appending variable.
+
+Current postfix: [Op.:  NO; val.: p] --> [Op.:  NO; val.: p] --> NULL
+Popping until encounter of next left parenthesis.
+Current operator stack: Received empty stack.
+
+Stack is empty.
+Finished succesfully.
+Expression converted to postfix.
+
+Evaluating...
+Getting amount of variables...
+Found new variable: 'p'.
+List is not empty.
+Constructed temp list.
+Temp list: [Op.:  NO; val.: p] --> NULL
+All variables: p 
+[Op.:  NO; val.: p] --> [Op.:  NO; val.: p] --> [Op.: YES; val.: !] --> [Op.: YES; val.: o] --> NULL
+Amount of variables: 1
+All variables: p
+Parsing entity....
+Is variable.
+Moving on...
+Parsing entity....
+Is variable.
+Moving on...
+Parsing entity....
+Is operator.
+Is negation.
+Moving on...
+Parsing entity....
+Is operator.
+Moving on...
+Finished. Value: 1.
+
+Parsing entity....
+Is variable.
+Moving on...
+Parsing entity....
+Is variable.
+Moving on...
+Parsing entity....
+Is operator.
+Is negation.
+Moving on...
+Parsing entity....
+Is operator.
+Moving on...
+Finished. Value: 1.
+
+Finished.
+Expression: pap
+Encountered character 'p'. Legality status: 2.
+000 of 002
+Encountered character 'a'. Legality status: 1.
+001 of 002
+Encountered character 'p'. Legality status: 2.
+002 of 002
+Finished.
+List created.
+Current: operator -1748132288; value: ….
+Testing.
+Stepping. Moving on.
+Current: operator 0; value: p.
+Testing.
+Stepping. Moving on.
+Current: operator 1; value: a.
+Testing.
+Stepping. Moving on.
+Current: operator 0; value: p.
+Testing.
+Stepping. Moving on.
+Expression valid.
+Started converting infix to postfix...
+Finished preparations.
+Started conversion...
+
+Current postfix: [Op.:  NO; val.: p] --> NULL
+Popping until encounter of a lesser operator.
+Operator 1 is not a recognized operator.
+
+Operator 1 is not a recognized operator.
+
+Operator 1 is not a recognized operator.
+
+Current operator stack: [Op.: YES; val.: …U] --> NULL
+
+Current postfix: [Op.:  NO; val.: p] --> [Op.: YES; val.: (] --> NULL
+Appending variable.
+
+Current postfix: [Op.:  NO; val.: p] --> [Op.: YES; val.: (] --> [Op.:  NO; val.: p] --> NULL
+Popping until encounter of a lesser operator.
+Operator 2 is not a recognized operator.
+
+Operator 2 is not a recognized operator.
+
+Current operator stack: [Op.: YES; val.: a] --> [Op.: YES; val.: …U] --> NULL
+
+Current postfix: [Op.:  NO; val.: p] --> [Op.: YES; val.: (] --> [Op.:  NO; val.: p] --> NULL
+Appending variable.
+
+Current postfix: [Op.:  NO; val.: p] --> [Op.: YES; val.: (] --> [Op.:  NO; val.: p] --> [Op.:  NO; val.: p] --> NULL
+Popping until encounter of next left parenthesis.
+Current operator stack: Received empty stack.
+
+Stack is empty.
+Finished succesfully.
+Expression converted to postfix.
+
+Evaluating...
+Getting amount of variables...
+Found new variable: 'p'.
+List is not empty.
+List is not empty.
+Constructed temp list.
+Temp list: [Op.:  NO; val.: p] --> NULL
+All variables: p 
+[Op.:  NO; val.: p] --> [Op.: YES; val.: (] --> [Op.:  NO; val.: p] --> [Op.:  NO; val.: p] --> [Op.: YES; val.: a] --> [Op.: YES; val.: …U] --> NULL
+Amount of variables: 1
+All variables: p
+Parsing entity....
+Is variable.
+Moving on...
+Parsing entity....
+Is operator.

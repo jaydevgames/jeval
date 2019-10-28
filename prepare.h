@@ -60,7 +60,6 @@ int input_to_list(const char *expr, list out)
 		sprintf(bf, "%03d of %03d\n", i, strlen(expr) - 1);
 		eval_log(bf);
 	}
-	//free(ent);
 	eval_log("Finished.\n");
 	return 1;
 }
@@ -171,13 +170,3 @@ int is_valid(list exp)
 	return (amount_of_open == amount_of_close);
 }
 #endif
-
-
-
-
-
-
-
-
-
-

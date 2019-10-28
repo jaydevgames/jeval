@@ -56,24 +56,24 @@ The default settings are:
 #endif
 ```
   1. The first flag (``_EVAL_LOGLEVEL``) defines the output stream for the debug messages.
-    * 0 is ``stdout``
-    * 1 is ``stderr`` 
-    * 2 is ``/dev/null`` (default)
-      * WARNING: setting any flag to ``/dev/null`` might cause compilation errors on non-Linux platforms.
-    * Any other value causes an error and defaults to ``stdout``
+      * 0 is ``stdout``
+      * 1 is ``stderr`` 
+      * 2 is ``/dev/null`` (default)
+        * WARNING: setting any flag to ``/dev/null`` might cause compilation errors on non-Linux platforms.
+      * Any other value causes an error and defaults to ``stdout``
   2. The second flag (``_EVAL_ERRLEVEL``) defines the output stream for any error messages.
-    * 0 is ``stderr`` (default)
-    * 1 is ``stdout``
-    * 2 is ``/dev/null``
-      * See the warning for the ``_EVAL_LOGLEVEL`` flag
-    * Any other value causes an error and defaults to ``stderr``
+      * 0 is ``stderr`` (default)
+      * 1 is ``stdout``
+      * 2 is ``/dev/null``
+        * See the warning for the ``_EVAL_LOGLEVEL`` flag
+      * Any other value causes an error and defaults to ``stderr``
   3. The third flag (``_EVAL_OUTLEVEL``) defines the output stream for the truth table and other 'real' output.
-    * 0 is ``stdout`` (default)
-    * 1 is ``stderr``
-    * 2 is ``/dev/null``
-      * See the warning for the ``_EVAL_LOGLEVEL`` flag
-    * Any other value causes and error and defaults to ``stdout``
-      * Changing this flag is generally not recommended.
+      * 0 is ``stdout`` (default)
+      * 1 is ``stderr``
+      * 2 is ``/dev/null``
+        * See the warning for the ``_EVAL_LOGLEVEL`` flag
+      * Any other value causes and error and defaults to ``stdout``
+        * Changing this flag is generally not recommended.
 Don't forget to recompile the project after modifying the ``def.h`` file or any other files.
 
 ## Calling from code
