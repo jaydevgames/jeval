@@ -25,8 +25,8 @@ Without brackets, the order of execution is as following:
   1. Biconditional/exclusive disjunction
 
 ## Compiling
-The repo contains the most recent build for Arch Linux (compiled with GCC).
-If you'd need to compile for another OS:
+All \*.out files are out of date.
+To compile jeval, do the following. If you already have a C compiler, skip step 1:
   1. Get any C compiler (GCC recommended)
   1. Open up a terminal and ``cd`` to the directory into which this repo was cloned/downloaded. 
   (Don't forget to unzip if you downloaded)
