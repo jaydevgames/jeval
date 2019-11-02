@@ -1,0 +1,7 @@
+#Skip build file
+*.out
+#Skip debug output file
+*.tmp
+*.txt
+#Skip old.c
+old.c

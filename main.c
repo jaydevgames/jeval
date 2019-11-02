@@ -24,7 +24,7 @@ void help()
 	eval_out("\tcertain order of execution.\n");
 	eval_out("\tUse the -m or --multiple flag to exit after evaluation.\n");
 	eval_out("\tIn -m mode, use \\q to exit.\n");
-	eval_out("\tIt is recommended to redirect stdout to /dev/null.\n\n");
+	eval_out("\tIt is recommended to redirect stderr to /dev/null.\n\n");
 
 	eval_out("NORMAL ORDER OF EXECUTION:\n");
 	eval_out("\tFirst: sub-expressions between brackets.\n");

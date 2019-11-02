@@ -36,6 +36,8 @@ To compile jeval, do the following. If you already have a C compiler, skip step 
 
 ## Command-line arguments
   * ``-h`` or ``--help``: shows the help and returns
+  * ``-m`` or ``--multiple``: allows for evaluating multiple expressions.
+    * This mode can be exited with ``\q`` as 'expression'.
   * ``'expression'``: evaluates the expression in four steps:
     1. shows the expression in a more readable way,
     1. converts the expression to postfix notation (under the hood),
@@ -102,6 +104,9 @@ To start the evaluation process, create a string literal (``char *`` or ``const 
 
 ## Known bugs/limitations
   * Implication: requires brackets because of the semi right-to-left evaluation
+  * Program segfaults (gives a segmentation fault) when using double negation
+  * Truth constants not yet implemented
+  * Implication is quite buggy
   * CURRENT VERSION IS NOT FULLY TESTED
 
 
